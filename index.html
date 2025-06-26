@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BOMBARDIRRO</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to top, #000428, #004e92);
+      color: white;
+      text-align: center;
+    }
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .croco-img {
+      max-width: 300px;
+      margin: 20px auto;
+      display: block;
+      animation: swing 3s infinite ease-in-out;
+      transform-origin: top center;
+    }
+    @keyframes swing {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-5deg); }
+      100% { transform: rotate(0deg); }
+    }
+    .features, .roadmap {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      text-align: left;
+    }
+    .features ul, .roadmap ol {
+      padding-left: 20px;
+    }
+    .features li, .roadmap li {
+      margin-bottom: 10px;
+    }
+    .buttons {
+      margin-top: 15px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background-color: #00c2ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .buttons a:hover {
+      background-color: #0099cc;
+    }
+    .buy-now {
+      background-color: #00ff88;
+      color: #000;
+    }
+    .buy-now:hover {
+      background-color: #00cc66;
+    }
+    footer {
+      font-size: 0.9em;
+      opacity: 0.7;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h1>🐊 BOMBARDIRRO 🌕</h1>
+    <p><strong>BOMBARDIRRO</strong> is the first crocodile meme coin flying to the moon! 🚀</p>
+    <img src="croco-moon.png" alt="Flying Crocodile to the Moon" class="croco-img" />
+
+    <div class="features">
+      <h2>✨ Why BOMBARDIRRO?</h2>
+      <ul>
+        <li>🐊 Funny & legendary crocodile character</li>
+        <li>🌕 Moon mission with a strong community</li>
+        <li>🔒 Locked liquidity & transparent tokenomics</li>
+        <li>📈 Viral potential across social media</li>
+      </ul>
+    </div>
+
+    <div class="roadmap">
+      <h2>🚀 Quick Roadmap</h2>
+      <ol>
+        <li>🔥 Launch & listing on Dexscreener</li>
+        <li>👥 Build Telegram community & meme campaign</li>
+        <li>🎁 Airdrop for early supporters</li>
+        <li>📢 Collaborations with crypto influencers</li>
+        <li>🌕 Fly to the moon with the #CrocoArmy</li>
+      </ol>
+    </div>
+
+    <p>Join the Croco Revolution today and ride the wave to the moon! 🐊🚀</p>
+  </main>
+
+  <footer>
+    Made with 🐊 by the Croco Community
+    <div class="buttons">
+      <a href="https://t.me/YourCrocCoin" target="_blank">Telegram</a>
+      <a href="https://dexscreener.com/solana/yourtokenaddress" target="_blank">Dexscreener</a>
+      <a href="https://x.com/YourCrocoCoin" target="_blank">X (Twitter)</a>
+      <a href="https://yourbuylink.com" target="_blank" class="buy-now">💰 Buy Now</a>
+    </div>
+  </footer>
+
+</body>
+</html>
